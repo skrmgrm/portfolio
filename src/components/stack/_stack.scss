@@ -1,0 +1,39 @@
+@import "../sass/animations";
+
+.stack {
+  background-color: #1b1b1b;
+  height: 100%;
+  padding: 5rem;
+}
+
+.tool-icons {
+  margin: 0 auto;
+
+  .tool-icon {
+    width: 5rem;
+    text-align: center;
+
+    img {
+      width: 100%;
+      min-width: 2rem;
+    }
+
+    #javascript,
+    #bootstrap,
+    #git {
+      width: 77%;
+      min-width: 2rem;
+    }
+
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}
+
+@for $i from 1 through 7 {
+  .tool-icon:nth-child(#{$i}) {
+    animation: icons 2s infinite;
+    animation-delay: #{(7 - $i) * 1.9}s;
+  }
+}

@@ -1,0 +1,18 @@
+@import "../sass/custom";
+
+.navbar-btn:focus,
+.navbar-btn:active,
+.navbar-btn-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link {
+  @include media-breakpoint-down(md) {
+    margin-left: 1rem;
+  }
+
+  margin-left: 2rem;
+  color: #4f4f4f;
+  font-weight: 700;
+}
