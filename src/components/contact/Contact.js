@@ -6,7 +6,8 @@ const Contact = () => {
       <div className="container text-center pt-5">
         <h1 className="text-white text-uppercase fw-bold fs-3">Let's Work</h1>
         <p className="text-white fw-lighter mt-4">
-          Don't be shy and just type something.
+          Let me help you with your business and I promise I will do what I can
+          to the best of my abilities.
         </p>
       </div>
       <form type="submit" className="container py-5">
