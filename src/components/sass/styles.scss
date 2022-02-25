@@ -2,9 +2,14 @@
 @import "../navbar/navbar";
 @import "../main/main";
 @import "../stack/stack";
+@import "../contact/contact";
 
 * {
   font-family: "Poppins", sans-serif;
+}
+
+textarea {
+  resize: none;
 }
 
 h1 {

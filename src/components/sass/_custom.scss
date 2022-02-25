@@ -1,11 +1,19 @@
 $blue: #2196f3;
 $light-blue: #00c1ff;
-$gray: #f9f9f9;
+$gray: #505050;
+$dark: #1b1b1b;
 
 $primary: $blue;
 $secondary: $light-blue;
 
 // navbar icon
+
+// input
+$input-font-family: "Poppins", sans-serif;
+$input-font-size: 1rem;
+$input-font-weight: 600;
+$input-line-height: 4;
+$input-border-radius: 0;
 
 // import bootstrap
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";

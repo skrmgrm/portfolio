@@ -45,7 +45,7 @@ const Main = () => {
         </div>
 
         <a
-          href="/"
+          href="#contact"
           className="btn mt-4 px-4 py-3 text-white fw-bold text-uppercase cta-btn"
         >
           <i class="bi bi-send-fill "></i> send me a message

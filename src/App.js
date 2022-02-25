@@ -1,3 +1,4 @@
+import Contact from "./components/contact/Contact";
 import Main from "./components/main/Main";
 import Navbar from "./components/navbar/Navbar";
 import "./components/sass/styles.scss";
@@ -9,6 +10,7 @@ function App() {
       <Navbar />
       <Main />
       <Stack />
+      <Contact />
     </div>
   );
 }

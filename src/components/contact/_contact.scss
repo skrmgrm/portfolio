@@ -1,0 +1,22 @@
+#contact {
+  background: linear-gradient(to bottom, $primary, $secondary);
+
+  input:focus,
+  textarea:focus {
+    border-bottom: 5px solid $gray;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: rgb(172, 172, 172);
+  }
+
+  button {
+    color: $primary !important;
+    border-radius: 0;
+
+    &:active {
+      color: $dark !important;
+    }
+  }
+}
