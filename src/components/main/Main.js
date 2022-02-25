@@ -8,7 +8,7 @@ import twitter from "../../assets/icons/twitter.png";
 
 const Main = () => {
   return (
-    <main className="container row mx-auto">
+    <main id="home" className="container row mx-auto">
       <div className="col-lg-6 text-center text-lg-end pe-lg-5">
         <img src={photo} alt="profile" className="w-75" />
       </div>
@@ -21,7 +21,7 @@ const Main = () => {
           development.
         </p>
 
-        <div className="d-flex social-icons">
+        <div className="d-flex social-icons gap-4">
           <div className="social-icon">
             <a href="/">
               <img src={facebook} alt="facebook" />

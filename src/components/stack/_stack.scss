@@ -3,15 +3,17 @@
 .stack {
   background-color: #1b1b1b;
   height: 100%;
-  padding: 5rem;
+  padding: 5.5rem;
 }
 
 .tool-icons {
   margin: 0 auto;
 
   .tool-icon {
-    width: 5rem;
+    margin: 1rem;
+    width: 3rem;
     text-align: center;
+    max-width: 5rem;
 
     img {
       width: 100%;
@@ -20,7 +22,9 @@
 
     #javascript,
     #bootstrap,
-    #git {
+    #git,
+    #photoshop,
+    #illustrator {
       width: 77%;
       min-width: 2rem;
     }
@@ -31,9 +35,9 @@
   }
 }
 
-@for $i from 1 through 7 {
+@for $i from 1 through 9 {
   .tool-icon:nth-child(#{$i}) {
     animation: icons 2s infinite;
-    animation-delay: #{(7 - $i) * 1.9}s;
+    animation-delay: #{9 + ($i * -9.9)}s;
   }
 }
