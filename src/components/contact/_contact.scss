@@ -1,9 +1,15 @@
 #contact {
   background: linear-gradient(to bottom, $primary, $secondary);
+  padding: 11rem 0;
 
   input:focus,
   textarea:focus {
     border-bottom: 5px solid $gray;
+  }
+
+  input.empty,
+  textarea.empty {
+    border-bottom: 5px solid rgb(235, 80, 80);
   }
 
   input::placeholder,

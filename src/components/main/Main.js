@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 import photo from "../../assets/profile.png";
 import facebook from "../../assets/icons/facebook.png";
@@ -23,33 +24,54 @@ const Main = () => {
 
         <div className="d-flex social-icons gap-4">
           <div className="social-icon">
-            <a href="/">
+            <a
+              href="https://web.facebook.com/skrmgrm/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={facebook} alt="facebook" />
             </a>
           </div>
           <div className="social-icon">
-            <a href="/">
+            <a
+              href="https://github.com/skrmgrm/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={github} alt="github" />
             </a>
           </div>
           <div className="social-icon">
-            <a href="/">
+            <a
+              href="https://www.instagram.com/skrmgrm/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={instagram} alt="instagram" />
             </a>
           </div>
           <div className="social-icon">
-            <a href="/">
+            <a
+              href="https://twitter.com/skrmgrm/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <img src={twitter} alt="twitter" />
             </a>
           </div>
         </div>
 
-        <a
-          href="#contact"
+        <Link
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={100}
           className="btn mt-4 px-4 py-3 text-white fw-bold text-uppercase cta-btn"
         >
-          <i class="bi bi-send-fill "></i> send me a message
-        </a>
+          <i className="bi bi-send-fill "></i> send me a message
+        </Link>
       </div>
     </main>
   );

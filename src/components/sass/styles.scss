@@ -3,6 +3,8 @@
 @import "../main/main";
 @import "../stack/stack";
 @import "../contact/contact";
+@import "../work/work";
+@import "../footer/footer";
 
 * {
   font-family: "Poppins", sans-serif;
@@ -18,4 +20,8 @@ h1 {
 
 p {
   letter-spacing: 0.1rem;
+}
+
+.nav-link {
+  cursor: pointer;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   return (
@@ -22,24 +23,57 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="#home">
+              <Link
+                activeClass="active"
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                className="nav-link"
+                aria-current="page"
+              >
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#stack">
+              <Link
+                activeClass="active"
+                to="stack"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={100}
+                className="nav-link"
+              >
                 Stack
-              </a>
+              </Link>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="/">
+            {/* <li className="nav-item">
+              <Link
+                activeClass="active"
+                to="work"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={100}
+                className="nav-link"
+              >
                 Work
-              </a>
-            </li>
+              </Link>
+            </li> */}
             <li className="nav-item">
-              <a className="nav-link" href="#contact">
+              <Link
+                activeClass="active"
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={100}
+                className="nav-link"
+              >
                 Contact
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
