@@ -66,7 +66,7 @@ const Main = () => {
           to="contact"
           spy={true}
           smooth={true}
-          offset={-70}
+          offset={70}
           duration={100}
           className="btn mt-4 px-4 py-3 text-white fw-bold text-uppercase cta-btn"
         >
