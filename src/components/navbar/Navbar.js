@@ -8,9 +8,17 @@ const Navbar = () => {
       className="navbar navbar-expand-lg shadow-sm bg-white fixed-top px-lg-5 py-4"
     >
       <div className="container-fluid">
-        <a className="navbar-brand text-uppercase fs-6 fw-bold " href="#home">
+        <Link
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={100}
+          className="navbar-brand text-uppercase fs-6 fw-bold "
+          href="#home"
+        >
           skrmgrm
-        </a>
+        </Link>
         <button
           className="btn navbar-btn d-lg-none"
           type="button"
@@ -68,7 +76,7 @@ const Navbar = () => {
                 to="contact"
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={70}
                 duration={100}
                 className="nav-link"
               >
